@@ -1,0 +1,13 @@
+flask
+werkzeug
+langchain
+langchain-core
+langchain-openai
+langchain-community
+openai
+python-dotenv
+boto3
+chromadb
+pypdf
+tiktoken
+unstructured
