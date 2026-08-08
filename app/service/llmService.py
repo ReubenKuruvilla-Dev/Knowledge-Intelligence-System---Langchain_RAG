@@ -13,7 +13,7 @@ from langchain_core.messages import HumanMessage, AIMessage
 from config import Config
 
 class LLMService:
-    def __init__(self, vectore_store):
+    def __init__(self, vector_store):
         self.llm = ChatOpenAI(
             model="gpt-4.1-mini",
             temperature=0.7,
