@@ -34,10 +34,13 @@ class LLMService:
         )
 
         contextualize_q_prompt = ChatPromptTemplate.from_messages(
-            ("system",contextualize_q_system_prompt),
-            MessagesPlaceholder("chat_history"),
-            ("human", "{input}")
+            [
+                ("system", contextualize_q_system_prompt),
+                MessagesPlaceholder("chat_history"),
+                ("human", "{input}")
+            ]
         )
+
 
         history_aware_retriever=create_history_aware_retriever(
             self.llm,

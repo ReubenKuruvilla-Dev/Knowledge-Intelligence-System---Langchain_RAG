@@ -4,10 +4,12 @@ langchain
 langchain-core
 langchain-openai
 langchain-community
+langchain-chroma
+langchain-text-splitters
 openai
 python-dotenv
 boto3
 chromadb
 pypdf
 tiktoken
-unstructured
+unstructured
